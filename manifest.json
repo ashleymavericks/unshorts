@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "URL Replacer",
+	"version": "1.0",
+	"description": "Replace the shorts keyword with watch in the URL",
+	"permissions": ["tabs"],
+	"browser_action": {
+		"default_title": "Replace Shorts with Watch"
+	},
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"icons": {
+		"16": "assets/favicon-16x16.png",
+		"32": "assets/favicon-16x16.png",
+		"128": "assets/mstile-150x150.png"
+	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"commands": {
+		"replace-url": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+R"
+			},
+			"description": "Replace Shorts with Watch"
+		}
+	}
+}
